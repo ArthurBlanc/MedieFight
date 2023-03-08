@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>Mediefight - Arthur BLANC : Développeur Web</title>
+        <meta name=description content="Portfolio - Nom du projet : Mediefight. Description du projet : Un mini-jeu de plateau au tour par tour dans un univers médiéval réalisé en JavaScript.">
+        <link rel='stylesheet' href="css/stylesheet.css" />
+    </head>
+
+    <body>
+        <h1>MedieFight <br />
+        Créez un jeu de plateau tour par tour en JavaScript </h1>
+        
+        <div class="game">
+            <div id='interface'>
+                <div id='profil_joueur_1'>
+                    <h3 class='nom_joueur' id='nom_joueur1'>Joueur 1</h3>
+                    <img class='image_interface_joueur joueur1' src='./img/joueur1.png'/>
+                    
+                    <div id="infos_j1">
+                        <progress max="100" value="100" id='barre_joueur1'></progress> <br />
+                        <span id='vie_joueur1'>Point de vie : 100/100</span> <br />
+                        <img class='image_interface_arme_joueur arme_joueur1' src='./img/arme1.png'/>
+                        <span id="nom_arme_joueur1">Dague</span> <br />
+                        <span>Puissance d'attaque : <span id="degats_arme_joueur1">10</span></span>
+                    </div>                 
+                </div>
+            </div>
+
+            <table id='grille'>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div id='interface'>
+                <div id='profil_joueur_2'>
+                    <h3 class='nom_joueur' id='nom_joueur2'>Joueur 2</h3>
+                    <img class='image_interface_joueur joueur2' src='./img/joueur2.png'/>
+
+                    <div id="infos_j2">
+                        <progress max="100" value="100" id="barre_joueur2"></progress> <br />
+                        <span id='vie_joueur2'>Point de vie : 100/100</span><br />
+                        <img class='image_interface_arme_joueur arme_joueur2' src='./img/arme1.png'/>
+                        <span id="nom_arme_joueur2">Dague</span> <br />
+                        <span>Puissance d'attaque : <span id='degats_arme_joueur2'>10</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+
+        <script src='js/armes.js' type='text/javascript'></script>
+        <script src='js/joueurs.js' type='text/javascript'></script>
+        <script src='js/interface.js' type='text/javascript'></script>
+        <script src='js/grille.js' type='text/javascript'></script>
+        <script src='js/game.js' type='text/javascript'></script>
+    </body>
+</html>
